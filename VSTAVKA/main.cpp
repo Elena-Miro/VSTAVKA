@@ -5,15 +5,16 @@ void printArray(const int array[], size_t size)
 	for (size_t i = 0; i < size; i++)
 		cout << array[i] << " ";
 }
-int* insertArray(int array[], size_t size, size_t index, int value)
+void insertArray(int** array, size_t size, size_t index, int value)
 {
 	int* copy = new int[size + 1];
 	for (size_t i = 0; i < index; i++)
-		copy[i] = array[i];
+		copy[i] = (*array)[i];
 	copy[index] = value;
 	for (size_t i = index + 1; i <= size; i++)
-		copy[i] = array[i - 1];
-	return copy;
+		copy[i] = (*array)[i - 1];
+	delete[] * array;
+	*array = copy;
 }
 int main()
 {
@@ -34,11 +35,10 @@ int main()
 	cin >> index;
 	cout << "Enter value to insert to array:";
 	cin >> value;
-	int* result = insertArray(array, size, index, value);
 	insertArray(array, size, index, value);
 	cout << "Your inserted array:";
-	printArray(result, size + 1);
-	delete[] result;
+	printArray(array, size + 1);
+	
 	delete[] array;
 	
 	return 0;

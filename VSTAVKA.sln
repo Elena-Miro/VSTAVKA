@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VSTAVKA", "VSTAVKA\VSTAVKA.vcxproj", "{558886E9-E07D-497F-84CD-B95FFF751033}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "POINTarray", "POINTarray\POINTarray.vcxproj", "{FCA15DD9-40DC-4666-B1D0-7DAE28F1E150}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{558886E9-E07D-497F-84CD-B95FFF751033}.Release|x64.Build.0 = Release|x64
 		{558886E9-E07D-497F-84CD-B95FFF751033}.Release|x86.ActiveCfg = Release|Win32
 		{558886E9-E07D-497F-84CD-B95FFF751033}.Release|x86.Build.0 = Release|Win32
+		{FCA15DD9-40DC-4666-B1D0-7DAE28F1E150}.Debug|x64.ActiveCfg = Debug|x64
+		{FCA15DD9-40DC-4666-B1D0-7DAE28F1E150}.Debug|x64.Build.0 = Debug|x64
+		{FCA15DD9-40DC-4666-B1D0-7DAE28F1E150}.Debug|x86.ActiveCfg = Debug|Win32
+		{FCA15DD9-40DC-4666-B1D0-7DAE28F1E150}.Debug|x86.Build.0 = Debug|Win32
+		{FCA15DD9-40DC-4666-B1D0-7DAE28F1E150}.Release|x64.ActiveCfg = Release|x64
+		{FCA15DD9-40DC-4666-B1D0-7DAE28F1E150}.Release|x64.Build.0 = Release|x64
+		{FCA15DD9-40DC-4666-B1D0-7DAE28F1E150}.Release|x86.ActiveCfg = Release|Win32
+		{FCA15DD9-40DC-4666-B1D0-7DAE28F1E150}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
