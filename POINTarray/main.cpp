@@ -16,6 +16,15 @@ void insertArray(int** array, size_t size, size_t index, int value)
 	delete[] * array;
 	*array = copy;
 }
+void printMatrix(int** matrix, size_t rows, size_t columns)
+{
+    for (size_t i = 0; i < rows; i++)
+    {
+        for (size_t j = 0; j < columns; j++)
+            cout << matrix[i][j] << " ";
+        cout << endl;
+    }
+}
 int main()
 {
     size_t rows;
@@ -33,12 +42,7 @@ int main()
             cout << "Enter " << j << " element of " << i << " row: ";
             cin >> matrix[i][j];
         }
-    for (size_t i = 0; i < rows; i++)
-    {
-        for (size_t j = 0; j < columns; j++)
-            cout << matrix[i][j] << " ";
-        cout << endl;
-    }
+    printMatrix(matrix, rows, columns);
     for (size_t i = 0; i < rows; i++)
         delete matrix[i];
     delete[] matrix;
